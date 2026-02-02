@@ -1,0 +1,20 @@
+site_name: Logi-Slate UI
+site_description: React/TypeScript tactical management interface
+site_url: https://vindicta-platform.github.io/Logi-Slate-UI/
+
+repo_name: vindicta-platform/Logi-Slate-UI
+repo_url: https://github.com/vindicta-platform/Logi-Slate-UI
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: amber
+      accent: lime
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Components: components.md
+  - Contributing: contributing.md
+plugins:
+  - search
