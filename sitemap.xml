@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://vindicta-platform.github.io/Logi-Slate-UI/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://vindicta-platform.github.io/Logi-Slate-UI/SETUP/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://vindicta-platform.github.io/Logi-Slate-UI/components/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://vindicta-platform.github.io/Logi-Slate-UI/contributing/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://vindicta-platform.github.io/Logi-Slate-UI/getting-started/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://vindicta-platform.github.io/Logi-Slate-UI/adr/000-template/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://vindicta-platform.github.io/Logi-Slate-UI/adr/001-typescript-language/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://vindicta-platform.github.io/Logi-Slate-UI/adr/002-precommit-required/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+</urlset>
