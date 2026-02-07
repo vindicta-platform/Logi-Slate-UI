@@ -1,6 +1,6 @@
 # ADR-001: TypeScript as Primary Language
 
-**Status**: Accepted  
+**Status**: Accepted
 **Date**: 2026-02-01
 
 ## Context
