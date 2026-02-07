@@ -1,10 +1,10 @@
 # Feature Proposal: Component Library UI Kit
 
-**Proposal ID**: FEAT-018  
-**Author**: Unified Product Architect (Autonomous)  
-**Created**: 2026-02-01  
-**Status**: Draft  
-**Priority**: Medium  
+**Proposal ID**: FEAT-018
+**Author**: Unified Product Architect (Autonomous)
+**Created**: 2026-02-01
+**Status**: Draft
+**Priority**: Medium
 
 ---
 
@@ -122,18 +122,18 @@ export const tokens = {
 ### User Stories
 
 #### US-001: Consistent UI
-**As a** developer  
-**I want** pre-built themed components  
+**As a** developer
+**I want** pre-built themed components
 **So that** I can build features faster
 
 #### US-002: Documentation
-**As a** new team member  
-**I want** interactive component docs  
+**As a** new team member
+**I want** interactive component docs
 **So that** I can learn the design system
 
 #### US-003: Accessibility
-**As a** user with disabilities  
-**I want** accessible components  
+**As a** user with disabilities
+**I want** accessible components
 **So that** I can use the platform effectively
 
 ### Acceptance Criteria
