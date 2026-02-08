@@ -1,0 +1,17 @@
+{
+    "name": "logi-slate-ui",
+    "version": "0.1.0",
+    "private": true,
+    "description": "React/TypeScript component library for the Vindicta Platform",
+    "scripts": {
+        "build": "pnpm --filter ui-kit run build",
+        "test": "pnpm --filter ui-kit run test",
+        "typecheck": "pnpm --filter ui-kit run typecheck",
+        "storybook": "pnpm --filter storybook run dev",
+        "build-storybook": "pnpm --filter storybook run build"
+    },
+    "engines": {
+        "node": ">=18.0.0",
+        "pnpm": ">=8.0.0"
+    }
+}

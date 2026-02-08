@@ -1,0 +1,46 @@
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--v-font-body);
+    font-weight: 600;
+    border-radius: var(--v-radius-full);
+    white-space: nowrap;
+    line-height: 1;
+}
+
+/* ---- Sizes ---- */
+.sm {
+    padding: 0.125rem 0.5rem;
+    font-size: 0.6875rem;
+}
+
+.md {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+}
+
+/* ---- Variants ---- */
+.info {
+    background: rgba(59, 130, 246, 0.15);
+    color: #60a5fa;
+    border: 1px solid rgba(59, 130, 246, 0.25);
+}
+
+.success {
+    background: rgba(16, 185, 129, 0.15);
+    color: #34d399;
+    border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.warning {
+    background: rgba(245, 158, 11, 0.15);
+    color: #fbbf24;
+    border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.error {
+    background: rgba(239, 68, 68, 0.15);
+    color: #f87171;
+    border: 1px solid rgba(239, 68, 68, 0.25);
+}
