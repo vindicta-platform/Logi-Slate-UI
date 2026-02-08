@@ -1,0 +1,73 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    background: var(--v-surface);
+    border: 1px solid var(--v-border);
+    border-radius: var(--v-radius-lg);
+    overflow: hidden;
+    transition: all var(--v-transition);
+}
+
+/* ---- Glassmorphism variant ---- */
+.glass {
+    background: var(--v-glass-bg);
+    border-color: var(--v-glass-border);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* ---- Interactive hover ---- */
+.interactive {
+    cursor: pointer;
+}
+
+.interactive:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--v-shadow-lg);
+    border-color: var(--v-primary);
+}
+
+.glass.interactive:hover {
+    background: var(--v-glass-bg-hover);
+    border-color: var(--v-glass-border-hover, rgba(255, 255, 255, 0.15));
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), 0 0 20px var(--v-primary-glow);
+}
+
+/* ---- Sections ---- */
+.header {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--v-border);
+    font-weight: 600;
+    font-size: 0.9375rem;
+}
+
+.glass .header {
+    border-bottom-color: var(--v-glass-border);
+}
+
+.body {
+    padding: 1.25rem;
+    flex: 1;
+}
+
+.footer {
+    padding: 0.75rem 1.25rem;
+    border-top: 1px solid var(--v-border);
+}
+
+.glass .footer {
+    border-top-color: var(--v-glass-border);
+}
+
+/* ---- Padding variants ---- */
+.compact .body {
+    padding: 0.75rem 1rem;
+}
+
+.compact .header {
+    padding: 0.75rem 1rem;
+}
+
+.compact .footer {
+    padding: 0.5rem 1rem;
+}

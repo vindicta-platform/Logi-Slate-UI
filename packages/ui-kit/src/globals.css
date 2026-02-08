@@ -1,0 +1,176 @@
+/**
+ * Vindicta Glass-Neon Global Styles
+ *
+ * These CSS custom properties are set based on the [data-theme] attribute
+ * applied by ThemeProvider. Import this file at the application root.
+ */
+
+/* ---- Google Fonts ---- */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ---- Dark theme (default) ---- */
+:root,
+[data-theme='dark'] {
+    --v-bg: #0a0a0b;
+    --v-surface: #18181b;
+    --v-surface-hover: #27272a;
+    --v-border: #3f3f46;
+    --v-text: #fafafa;
+    --v-text-muted: #a1a1aa;
+
+    --v-primary: #f59e0b;
+    --v-primary-hover: #d97706;
+    --v-primary-glow: rgba(245, 158, 11, 0.3);
+
+    --v-accent: #00d4ff;
+    --v-accent-glow: rgba(0, 212, 255, 0.3);
+
+    --v-success: #10b981;
+    --v-warning: #f59e0b;
+    --v-error: #ef4444;
+    --v-info: #3b82f6;
+
+    --v-glass-bg: rgba(255, 255, 255, 0.05);
+    --v-glass-bg-hover: rgba(255, 255, 255, 0.08);
+    --v-glass-border: rgba(255, 255, 255, 0.1);
+
+    --v-font-display: 'Bebas Neue', Impact, sans-serif;
+    --v-font-body: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --v-font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+    --v-radius-sm: 4px;
+    --v-radius-md: 8px;
+    --v-radius-lg: 12px;
+    --v-radius-xl: 16px;
+    --v-radius-full: 9999px;
+
+    --v-transition-fast: 100ms ease;
+    --v-transition: 200ms ease;
+    --v-transition-slow: 300ms ease;
+
+    --v-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --v-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --v-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.3);
+
+    color-scheme: dark;
+}
+
+/* ---- Light theme ---- */
+[data-theme='light'] {
+    --v-bg: #ffffff;
+    --v-surface: #fafafa;
+    --v-surface-hover: #f4f4f5;
+    --v-border: #e4e4e7;
+    --v-text: #18181b;
+    --v-text-muted: #71717a;
+
+    --v-primary: #d97706;
+    --v-primary-hover: #b45309;
+    --v-primary-glow: rgba(217, 119, 6, 0.2);
+
+    --v-glass-bg: rgba(0, 0, 0, 0.03);
+    --v-glass-bg-hover: rgba(0, 0, 0, 0.05);
+    --v-glass-border: rgba(0, 0, 0, 0.08);
+
+    --v-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.08);
+    --v-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
+    --v-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.08);
+
+    color-scheme: light;
+}
+
+/* ---- Keyframes ---- */
+@keyframes vindicta-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes vindicta-fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes vindicta-fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes vindicta-slideUp {
+    from {
+        transform: translateY(8px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes vindicta-slideDown {
+    from {
+        transform: translateY(-8px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes vindicta-pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* ---- Base reset ---- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--v-font-body);
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--v-text);
+    background-color: var(--v-bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---- Focus visible (keyboard only) ---- */
+:focus-visible {
+    outline: 2px solid var(--v-primary);
+    outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+    outline: none;
+}

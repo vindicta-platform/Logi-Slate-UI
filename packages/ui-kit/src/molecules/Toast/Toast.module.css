@@ -1,0 +1,120 @@
+.container {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0.5rem;
+    z-index: 1100;
+    max-width: 400px;
+    width: 100%;
+    pointer-events: none;
+}
+
+.toast {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.875rem 1rem;
+    background: var(--v-surface);
+    border: 1px solid var(--v-border);
+    border-radius: var(--v-radius-md);
+    box-shadow: var(--v-shadow-lg);
+    animation: vindicta-slideUp 0.3s ease;
+    pointer-events: auto;
+    min-width: 280px;
+}
+
+/* ---- Variants ---- */
+.info {
+    border-left: 3px solid var(--v-info);
+}
+
+.success {
+    border-left: 3px solid var(--v-success);
+}
+
+.warning {
+    border-left: 3px solid var(--v-warning);
+}
+
+.error {
+    border-left: 3px solid var(--v-error);
+}
+
+/* ---- Sections ---- */
+.icon {
+    flex-shrink: 0;
+    font-size: 1.125rem;
+    line-height: 1;
+    margin-top: 1px;
+}
+
+.info .icon {
+    color: var(--v-info);
+}
+
+.success .icon {
+    color: var(--v-success);
+}
+
+.warning .icon {
+    color: var(--v-warning);
+}
+
+.error .icon {
+    color: var(--v-error);
+}
+
+.content {
+    flex: 1;
+    min-width: 0;
+}
+
+.title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--v-text);
+    margin-bottom: 0.125rem;
+}
+
+.message {
+    font-size: 0.8125rem;
+    color: var(--v-text-muted);
+    line-height: 1.4;
+}
+
+.close {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    border-radius: var(--v-radius-sm);
+    color: var(--v-text-muted);
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: all var(--v-transition-fast);
+}
+
+.close:hover {
+    background: var(--v-surface-hover);
+    color: var(--v-text);
+}
+
+/* ---- Exit animation ---- */
+.exiting {
+    animation: vindicta-fadeOut 0.2s ease forwards;
+}
+
+/* ---- Mobile ---- */
+@media (max-width: 480px) {
+    .container {
+        left: 1rem;
+        right: 1rem;
+        max-width: none;
+    }
+}

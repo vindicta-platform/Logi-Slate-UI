@@ -1,0 +1,45 @@
+{
+    "name": "@vindicta/ui-kit",
+    "version": "0.1.0",
+    "description": "Vindicta Glass-Neon component library",
+    "type": "module",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs",
+            "types": "./dist/index.d.ts"
+        },
+        "./styles": "./dist/style.css"
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "vite build",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "test:coverage": "vitest run --coverage",
+        "typecheck": "tsc --noEmit"
+    },
+    "peerDependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@testing-library/jest-dom": "^6.6.3",
+        "@testing-library/react": "^14.3.1",
+        "@types/react": "^18.2.79",
+        "@types/react-dom": "^18.2.25",
+        "jsdom": "^24.1.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "typescript": "^5.4.5",
+        "vite": "^5.4.14",
+        "@vitejs/plugin-react": "^4.3.4",
+        "vite-plugin-dts": "^3.9.1",
+        "vitest": "^1.6.0"
+    }
+}

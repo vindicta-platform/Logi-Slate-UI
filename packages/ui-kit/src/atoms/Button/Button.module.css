@@ -1,0 +1,143 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: var(--v-font-body);
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: var(--v-radius-md);
+    cursor: pointer;
+    transition: all var(--v-transition);
+    user-select: none;
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* ---- Sizes ---- */
+.sm {
+    height: 32px;
+    padding: 0 0.75rem;
+    font-size: 0.8125rem;
+}
+
+.md {
+    height: 40px;
+    padding: 0 1rem;
+    font-size: 0.875rem;
+}
+
+.lg {
+    height: 48px;
+    padding: 0 1.5rem;
+    font-size: 1rem;
+    min-width: 48px;
+}
+
+/* ---- Variants ---- */
+
+/* Primary: amber gradient with glow */
+.primary {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: #0a0a0b;
+    border-color: transparent;
+    box-shadow: 0 2px 8px rgba(245, 158, 11, 0.25);
+}
+
+.primary:hover:not(:disabled) {
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    box-shadow: 0 4px 16px rgba(245, 158, 11, 0.4);
+    transform: translateY(-1px);
+}
+
+.primary:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: 0 1px 4px rgba(245, 158, 11, 0.3);
+}
+
+/* Secondary: outlined */
+.secondary {
+    background: transparent;
+    color: var(--v-primary);
+    border-color: var(--v-primary);
+}
+
+.secondary:hover:not(:disabled) {
+    background: rgba(245, 158, 11, 0.1);
+    border-color: var(--v-primary-hover);
+}
+
+.secondary:active:not(:disabled) {
+    background: rgba(245, 158, 11, 0.15);
+}
+
+/* Ghost: transparent */
+.ghost {
+    background: transparent;
+    color: var(--v-text);
+    border-color: transparent;
+}
+
+.ghost:hover:not(:disabled) {
+    background: var(--v-surface-hover);
+}
+
+.ghost:active:not(:disabled) {
+    background: var(--v-border);
+}
+
+/* Danger: red */
+.danger {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: #ffffff;
+    border-color: transparent;
+    box-shadow: 0 2px 8px rgba(239, 68, 68, 0.25);
+}
+
+.danger:hover:not(:disabled) {
+    background: linear-gradient(135deg, #f87171, #ef4444);
+    box-shadow: 0 4px 16px rgba(239, 68, 68, 0.4);
+    transform: translateY(-1px);
+}
+
+.danger:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+/* ---- Icon spacing ---- */
+.iconLeft,
+.iconRight {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* ---- Loading state ---- */
+.loading {
+    cursor: wait;
+}
+
+.loading .content {
+    visibility: hidden;
+}
+
+.spinnerWrapper {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---- Full width ---- */
+.fullWidth {
+    width: 100%;
+}
